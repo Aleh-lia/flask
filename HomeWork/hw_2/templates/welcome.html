@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block title %}
+{{ task }}
+{% endblock %}
+
+
+
+
+{% block content %}
+<h3>Привет, {{ user_name }}!</h3>
+<a href="/logout"><button type="button">Выйти</button></a>
+{% endblock %}

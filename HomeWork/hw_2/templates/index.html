@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        {% block title %}
+            {{ title }}
+        {% endblock %}
+    </title>
+</head>
+
+<body>
+{% block content %}
+
+    <h1>Введите ваше имя и электронную почту</h1>
+     <form method="POST" enctype="/">
+        <label for="name">Введите Ваше имя</label>
+        <input type="text" id="name" name="name" placeholder="Введите Ваше имя" required><br><br>
+        <label for="email">Введите Ваш имейл</label>
+        <input type="email" id="email" placeholder="Введите Ваш имейл" required><br><br>
+        <input type="submit" value="Войти">
+    </form>
+{% endblock %}
+
+</body>
+</html>
